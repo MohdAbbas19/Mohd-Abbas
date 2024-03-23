@@ -95,28 +95,52 @@
                 margin-bottom: 0.5rem;
             }
         }
+     /* Style for logo image */
+.logo-img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.logo-container:hover .logo-img {
+    transform: scale(1.2); /* Adjust the zoom factor as needed */
+}
+/* Add this to your existing styles */
+
+/* Style for logo name */
+
+.logo-name{
+    /* Adjust the margin as needed */
+    font-size: 1.5rem;
+   
+}
     </style>
 </head>
 
 <body class="bg-gray-100">
 
     <nav class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="logo hover:text-gray-300">Mohd Abbas</a>
-                <button class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="nav-links hidden md:flex">
-                    <a href="index.html" class="hover:text-gray-300">Home</a>
-                    <a href="project.html" class="hover:text-gray-300">Projects</a>
-                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
-                    <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
+                <div class="container mx-auto flex justify-between items-center">
+                    <!-- Add your picture here as the logo -->
+                    <div class="logo-container">
+                        <img src="logo.jpeg" alt="Your Picture" class="logo-img">
+                        <span class="logo-name">Mohd Abbas</span>
+                    
+                    </div>
+                    <!-- End of picture -->
+                    <div class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="nav-links hidden md:flex">
+                        <a href="index.html" class="hover:text-gray-300">Home</a>
+                        <a href="project.html" class="hover:text-gray-300">Projects</a>
+                        <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                        <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-
+            </nav>
     <div class="container mx-auto mt-8">
 
         <section class="mb-8">
@@ -164,8 +188,30 @@
 
     </div>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
-        <p>&copy; 2024 Mohd Abbas. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <a href="mailto:mabbas122119sk@gmail.com" class="text-blue-300 hover:underline">mabbas122119sk@gmail.com</a>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                    <a href="tel:+917060568291" class="text-blue-300 hover:underline">+917060568291</a>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Social Media</h3>
+                    <div class="flex">
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-instagram"></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-4">&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
     <script>
