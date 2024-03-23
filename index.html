@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Additional Custom Styles */
+
+        /* Style for the header */
+        .logo {
+            font-size: 1.5rem; /* Adjust size as needed */
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff; /* Color of the logo */
+            /* You can add additional styling like text-shadow, etc. */
+        }
+
+        /* Style for navigation links */
+        nav a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #2c5282;
+        }
+
+        /* Style for section headings */
+        section h2 {
+            color: #2c5282;
+        }
+
+        /* Style for footer */
+        footer {
+            background-color: #2c5282;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Style for footer text */
+        footer p {
+            font-size: 0.8rem;
+        }
+
+        /* Style for hamburger icon */
+        .menu-toggle {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin-right: 1rem;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.show {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                background-color: #2c5282;
+                padding: 1rem;
+                border-radius: 0 0.5rem 0.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                z-index: 1;
+            }
+
+            .nav-links.show a {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="logo hover:text-gray-300">Mohd Abbas</a>
+                <button class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links hidden md:flex">
+                    <a href="index.html" class="hover:text-gray-300">Home</a>
+                    <a href="project.html" class="hover:text-gray-300">Projects</a>
+                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                    <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700">I am a passionate computer science student with a keen interest in programming and
+                software development.</p>
+        </section>
+
+
+
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4"><a href="project.html">Projects</a></h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-lg font-bold mb-2">Text Analysis Tool</h3>
+                <p class="text-gray-700">This is very useful for those whos want to compute variables of text in text analysis Tecnologeis used: FlaskAPI, nltk, SentimentIntensityAnalyzeretc. </p>
+                <a href="https://github.com/MohdAbbas19/Hotel_Booking_Data_Analysis-_Project/blob/main/Hotel_Booking_Data_Analysis%20_Project.ipynb" class="text-blue-500 hover:underline">View Repositry</a>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-lg font-bold mb-2">Hottel Booking Analysis</h3>
+                <p class="text-gray-700">here I follow some instractions and create a </p>
+                <a href="https://github.com/MohdAbbas19/Hotel_Booking_Data_Analysis-_Project/blob/main/Hotel_Booking_Data_Analysis%20_Project.ipynb" class="text-blue-500 hover:underline">View Repositry</a>
+
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Education</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-lg font-bold mb-2">Bachelor's Degree in Computer Science</h3>
+                <p class="text-gray-700">Teerthanker Mahaveer University, 2021 - 2024</p>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Skills</h2>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Programming Languages: Java, Python</li>
+                <li>Web Development: HTML/CSS, Flask</li>
+                <li>Database Management: Oracal, MySQL</li>
+                <li>Machine Learning: Scikit-learn</li>
+                <li>Data Analytics: Pandas, NumPy, Power BI, SQL</li>
+                <li>Version Control: Git</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
+

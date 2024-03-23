@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Additional Custom Styles */
+
+        /* Style for the header */
+        .logo {
+            font-size: 1.5rem; /* Adjust size as needed */
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff; /* Color of the logo */
+            /* You can add additional styling like text-shadow, etc. */
+        }
+
+        /* Style for navigation links */
+        nav a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #2c5282;
+        }
+
+        /* Style for section headings */
+        section h2 {
+            color: #2c5282;
+        }
+
+        /* Style for footer */
+        footer {
+            background-color: #2c5282;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Style for footer text */
+        footer p {
+            font-size: 0.8rem;
+        }
+
+        /* Style for hamburger icon */
+        .menu-toggle {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-links.show {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                background-color: #2c5282;
+                padding: 1rem;
+                border-radius: 0 0.5rem 0.5rem 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                z-index: 1;
+            }
+
+            .nav-links.show a {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="logo hover:text-gray-300">Mohd Abbas</a>
+                <button class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="nav-links hidden md:flex">
+                    <a href="index.html" class="hover:text-gray-300">Home</a>
+                    <a href="project.html" class="hover:text-gray-300">Projects</a>
+                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                    <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-8">
+        <section class="mb-8">
+            <h2 class="text-xl font-bold mb-4">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Certificate 1 -->
+                <div class="bg-white p-4 rounded shadow">
+
+                    <h3 class="text-lg font-bold my-2">Google Google Data Analytics Professional Certificate</h3>
+                    <p class="text-gray-700">The Google Data Analytics Professional Certificate is an online program offered by Google through the Coursera platform. This certificate program provides learners with essential skills and knowledge in data analysis, covering topics such as data cleaning, data visualization, data analysis, and the basics of SQL for data analysis. Through a series of hands-on projects and real-world case studies, participants gain practical experience in applying data analytics techniques to solve business problems. Upon completion of the program, learners will have the skills necessary to pursue entry-level roles in data analytics or advance their career in the field.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/QB5B9UWS5MQU" class="text-blue-500 hover:underline">View Certificate</a>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="bg-white p-4 rounded shadow">
+                    
+                    <h3 class="text-lg font-bold my-2">Title: Python 3.4.3 Certification - Teerthanker Mahaveer University, IIT Bombay, Spoken Tutorial</h3>
+                    <p class="text-gray-700">The Python 3.4.3 test, conducted at Teerthanker Mahaveer University in collaboration with the Spoken Tutorial Project, IIT Bombay, certifies that MOHD ABBAS has successfully completed the program. This certification validates proficiency in Python programming, covering essential concepts and practical applications. Invigilated by Vandana Sharma, the examination was conducted remotely from IIT Bombay. With a credit of 4 and a score of 75.00%, this certification attests to a strong understanding of Python fundamentals.</p>
+                    <a href="MOHD-ABBAS-Participant-Certificate.pdf" class="text-blue-500 hover:underline">View Certificate</a>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="bg-white p-4 rounded shadow">
+            
+                    <h3 class="text-lg font-bold my-2">Title: Wipro TalentNext Java J2EE Certification</h3>
+                    <p class="text-gray-700">This certification course from Wipro's TalentNext program provides comprehensive training in Java Enterprise Edition (J2EE), a powerful platform for building web-based enterprise applications. Covering essential concepts like Collections, Servlets, JSP, JDBC, and more, this course equips learners with the skills needed to develop robust and scalable Java-based solutions. Led by industry experts, the program offers hands-on experience and practical insights, enabling participants to excel in Java web development.</p>
+                    <a href="Wipro TalentNext Java J2EE Certification_1701085830599.pdf" class="text-blue-500 hover:underline">View Certificate</a>
+                </div>
+                <!-- Add more certificates as needed -->
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
