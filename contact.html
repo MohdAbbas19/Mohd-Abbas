@@ -10,7 +10,7 @@
     <style>
         /* Additional Custom Styles */
 
-        body {
+        .container.mx-auto.mt-8 {
     margin-left: 20px; /* Adjust the left margin as needed */
     margin-right: 20px; /* Adjust the right margin as needed */
 }
@@ -95,8 +95,11 @@
             }
 
             .nav-links.show a {
-                margin-right: 0;
+                margin-right: 15px;
                 margin-bottom: 0.5rem;
+            }
+            .logo-container{
+                margin-left: 15px;
             }
         }
         .logo-container {
@@ -158,8 +161,30 @@ body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; color:
         <h2>Skills</h2> <ul> <li> <p> <strong>Technical:</strong> Data Structures, Java, Basics of Machine Learning, SQL, Python (numpy, pandas, matplotlib), Data Analytics, Power BI (Desktop), Excel. </p> </li> <li> <p> <strong>Personal:</strong> Strong communication skills, Analytical thinking, Inquisitive nature, Intrapersonal communication. </p> </li> </ul> <h2>Hobbies</h2> <ul> <li> <p> Listening to music </p> </li> <li> <p> Playing with electronic components </p> </li> <li> <p> Exercising </p> </li> </ul>
     </div>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+   <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <a href="mailto:mabbas122119sk@gmail.com" class="text-blue-300 hover:underline">mabbas122119sk@gmail.com</a>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                    <a href="tel:+917060568291" class="text-blue-300 hover:underline">+917060568291</a>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-lg font-semibold mb-2">Social Media</h3>
+                    <div class="flex">
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-300 hover:underline mx-2"><i class="fab fa-instagram"></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-4">&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
     <script>
