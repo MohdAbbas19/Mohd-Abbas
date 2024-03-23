@@ -10,7 +10,11 @@
     <style>
         /* Additional Custom Styles */
 
-        /* Style for the header */
+        body {
+    margin-left: 20px; /* Adjust the left margin as needed */
+    margin-right: 20px; /* Adjust the right margin as needed */
+}
+/* Style for the header */
         .logo {
             font-size: 1.5rem; /* Adjust size as needed */
             font-weight: bold;
@@ -95,48 +99,67 @@
                 margin-bottom: 0.5rem;
             }
         }
+        .logo-container {
+    position: relative;
+}
+
+/* Style for logo image */
+.logo-img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.logo-container:hover .logo-img {
+    transform: scale(1.2); /* Adjust the zoom factor as needed */
+}
+/* Add this to your existing styles */
+
+/* Style for logo name */
+
+.logo-name{
+    /* Adjust the margin as needed */
+    font-size: 1.5rem;
+   
+}
+body { font-family: Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #333; } h1 { font-size: 2rem; font-weight: bold; margin-bottom: 1rem; } h2 { font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; } p { margin-bottom: 1rem; }
     </style>
 </head>
 
 <body class="bg-gray-100">
 
     <nav class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="logo hover:text-gray-300">Mohd Abbas</a>
-                <button class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="nav-links hidden md:flex">
-                    <a href="index.html" class="hover:text-gray-300">Home</a>
-                    <a href="project.html" class="hover:text-gray-300">Projects</a>
-                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
-                    <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
-                </div>
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Add your picture here as the logo -->
+            <div class="logo-container">
+                <img src="logo.jpeg" alt="Your Picture" class="logo-img">
+                <span class="logo-name">Mohd Abbas</span>
+            
+            </div>
+            <!-- End of picture -->
+            <div class="menu-toggle text-gray-400 hover:text-white focus:outline-none md:hidden">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links hidden md:flex">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="project.html" class="hover:text-gray-300">Projects</a>
+                <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                <a href="certifications.html" class="hover:text-gray-300">Certifications</a>
             </div>
         </div>
     </nav>
-
     <div class="container mx-auto mt-8">
 
-        <section class="mb-8">
-            <h2 class="text-xl font-bold mb-4">Contact Me</h2>
-            <p class="text-gray-700">Feel free to reach out to me through the following channels:</p>
-            <ul class="list-none text-gray-700 ml-0">
-                <li>Email: mabbas122119sk@gmail.com</li>
-                <li>Phone: +917060568291</li>
-                <li>Social Media:
-                    <a href="https://www.instagram.com/m._abbas_k/" class="text-blue-500 hover:underline"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/mohd-abbas-829a78254/" class="text-blue-500 hover:underline"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/MohdAbbas19" class="text-blue-500 hover:underline"><i class="fab fa-github"></i></a>
-                </li>
-            </ul>
-        </section>
-
+        <h1>MOHD ABBAS</h1> <p> <strong>+917060568291</strong> | <a href="mailto:mabbas122119sk@gmail.com">mabbas122119sk@gmail.com</a> | <a href="https://linkedin.com/in/mohd-abbas-122119" target="_blank">LinkedIn</a> </p> <p> Experienced and knowledgeable in Computer Science, with expertise in Data Structures and fundamental principles of Core Java. Possesses strong Analytical Thinking and a keen interest in learning about new technologies. </p> <h2>Education</h2> <ul> <li> <p> Pursuing B.Sc. (Hons) CS (2021-present) from Teerthankaer Mahaveer University, Moradabad. </p> </li> <li> <p> Intermediate from State Board with a score of 67%. </p> </li> <li> <p> High school from State Board with a score of 67%. </p> </li> </ul>
+        <h2>Training</h2> <ul> <li> <p><strong>2019-2020:</strong> Machine Learning Concepts and Modeling from Teerthanker Mahaveer University</p> </li> <li> <p><strong>2017-2018:</strong> Successfully completed talentNext Java J2EE training from Wipro</p> </li> </ul> <h2>Project</h2> <ul> <li> <p><strong>Created a basic Fake News detection Model:</strong> Employed NLP and Vectorizer for data preprocessing using Flask API and Random Forest algorithm, achieving 89% accuracy. <a href="https://github.com/yourusername/repository">Repository</a></p> </li> <li> <p><strong>Data Analytics Project:</strong> Coursera Profile</p> </li> <li> <p><strong>Data Extraction and cleaning:</strong> Repository</p> </li> </ul>
+        <h2>Certifications & Curricular Activities</h2> <ul> <li> <p> <strong>Certified by Spoken Tutorial Project at IIT Bombay</strong>: Python Programming Training in 2023 with a score of 75%. </p> </li> <li> <p> <strong>Completed an Introduction to Google Data Analytics course</strong> by Google on Coursera. Earned certificate on <strong>December 13, 2023</strong> with a score of 90%. <a href="https://www.coursera.org/account/accomplishments/certificate/XXXXXXXX" target="_blank" rel="noopener noreferrer">Coursera Profile</a> </p> </li> <li> <p> <strong>Accenture North America Data Analytics and Visualization Job Simulation</strong> on Forage: Completed a simulation focused on advising a hypothetical social media client as a Data Analyst at Accenture. Cleaned, modeled and analyzed 7 datasets to uncover insights into content trends to inform strategic decisions. Prepared a PowerPoint deck and video presentation to communicate key insights for the client and internal stakeholders. </p> </li> <li> <p> Participated in <strong>Brain Manthan 2020</strong> at Teerthanker Mahaveer University. </p> </li> <li> <p> <strong>Volunteer at IEEE Conference 2020</strong> organized at Teerthanker Mahaveer University. </p> </li> </ul>
+        <h2>Skills</h2> <ul> <li> <p> <strong>Technical:</strong> Data Structures, Java, Basics of Machine Learning, SQL, Python (numpy, pandas, matplotlib), Data Analytics, Power BI (Desktop), Excel. </p> </li> <li> <p> <strong>Personal:</strong> Strong communication skills, Analytical thinking, Inquisitive nature, Intrapersonal communication. </p> </li> </ul> <h2>Hobbies</h2> <ul> <li> <p> Listening to music </p> </li> <li> <p> Playing with electronic components </p> </li> <li> <p> Exercising </p> </li> </ul>
     </div>
 
     <footer class="bg-gray-800 text-white text-center py-4 mt-8">
-        <p>&copy; 2024 Mohd Abbas. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
     <script>
